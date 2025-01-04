@@ -13,7 +13,11 @@ export default function Profile({user}){
                 <Text>This is Profile Screen {user.name}</Text>
             </View>
         </View>
-    )
+        <View style={styles.footer}>
+            <Text style={styles.footerText}>UoV © 2025</Text>
+        </View>
+    </View>
+  );
 }
 const styles =StyleSheet.create({
     container: {
