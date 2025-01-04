@@ -53,10 +53,7 @@ export default function Login() {
                     >
                     Login
                     </Button>
-                </View>
-                <View>
-
-                </View>  
+                </View> 
                 <View style={styles.footer}>
                     <Text style={styles.footerText}>UoV © 2025</Text>
                 </View>
