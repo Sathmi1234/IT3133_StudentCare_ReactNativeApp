@@ -1,14 +1,11 @@
 import * as React from 'react';
 import { BottomNavigation, Text } from 'react-native-paper';
-
-const ProfileRoute = () => <Text>Profile</Text>;
-
-const CoursesRoute = () => <Text>Courses</Text>;
-
-const SubjectsRoute = () => <Text>Subjects</Text>;
+import Profile from './Profile';
+import Courses from './Courses';
+import Subjects from './Subjects';
 
 export default function Main({route}){
-    console.log(route.params)
+    const {user}=route.params;
   const [index, setIndex] = React.useState(0);
   const [routes] = React.useState([
     { key: 'profile', title: 'Profile', focusedIcon: 'account', unfocusedIcon: 'account-outline'},
@@ -17,9 +14,9 @@ export default function Main({route}){
   ]);
 
   const renderScene = BottomNavigation.SceneMap({
-    profile: ProfileRoute,
-    courses: CoursesRoute,
-    subjects: SubjectsRoute,
+    profile:()=> <Profile user={user}/>,
+    courses:()=> <Courses user={user}/>,
+    subjects:()=> <Subjects user={user}/>,
   });
 
   return (
