@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
       backgroundColor: "#520f4e",
       width: "100%",
       alignItems: "center",
-      height: 30,
+      height: 50,
       justifyContent: "center",
     },
     cardtitletext: {
@@ -92,5 +92,5 @@ const styles = StyleSheet.create({
         marginTop: 10,
         textAlign: "center",
     },
-  });
+});
   
