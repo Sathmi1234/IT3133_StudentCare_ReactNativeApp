@@ -2,9 +2,13 @@ import { useNavigation } from "@react-navigation/native";
 import { Button, PaperProvider, Text, TextInput } from "react-native-paper";
 import { Image, StyleSheet, View } from "react-native";
 import { ScrollView } from "react-native";
+import { useState } from "react";
 
 export default function Login() {
   const navigation = useNavigation();
+  const [username,setUsername]=useState();
+  const [password,setPassword]=useState();
+
   return (
         <ScrollView contentContainerStyle={styles.scrollView}>
             <View style={styles.container}>
