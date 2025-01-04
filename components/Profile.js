@@ -57,44 +57,45 @@ export default function Profile({ user }) {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#fff",
-  },
-  banner: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  image: {
-    flex: 1,
-    width: 250,
-    height: 65,
-    top: 10,
-    position: 'absolute',
-  },
-  imageCard: {
-    flex: 2,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  footer:{
-      flex:1,
-      bottom:0,
-      position:"absolute",
-      backgroundColor:"#520f4e",
-      width:"100%",
-      alignItems:'center',
-      height:30
-  },
-  footerText:{
-      color:'#ffffff'
-  },
-  propic: {
-    width: 100,
-    height: 100,
-    borderRadius: 100,
-  },
-});
+    scrollContent: {
+      flexGrow: 1,
+    },
+    container: {
+      flex: 1,
+      alignItems: "center",
+      backgroundColor: "#fff",
+      paddingBottom: 30,
+    },
+    banner: {
+      justifyContent: "center",
+      alignItems: "center",
+      marginVertical: 10,
+    },
+    image: {
+      width: 250,
+      height: 65,
+    },
+    card: {
+      marginVertical: 10,
+      width: "90%",
+      alignSelf: "center"
+    },
+    footer: {
+      backgroundColor: "#520f4e",
+      width: "100%",
+      alignItems: "center",
+      height: 30,
+      justifyContent: "center",
+    },
+    cardtitletext: {
+      fontSize: 28,
+      marginTop: 10,
+      textAlign: "left",
+    },    
+    nametext: {
+        fontSize: 28,
+        marginTop: 10,
+        textAlign: "center",
+    },
+  });
+  
