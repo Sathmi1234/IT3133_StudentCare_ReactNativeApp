@@ -7,7 +7,8 @@ const CoursesRoute = () => <Text>Courses</Text>;
 
 const SubjectsRoute = () => <Text>Subjects</Text>;
 
-export default function Main(){
+export default function Main({route}){
+    console.log(route.params)
   const [index, setIndex] = React.useState(0);
   const [routes] = React.useState([
     { key: 'profile', title: 'Profile', focusedIcon: 'account', unfocusedIcon: 'account-outline'},
