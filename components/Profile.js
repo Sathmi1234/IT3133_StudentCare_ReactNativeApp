@@ -1,8 +1,11 @@
-import { Image, StyleSheet, Text, View } from "react-native";
+import React from "react";
+import { Image, StyleSheet, Text, View, ScrollView } from "react-native";
+import { Avatar, Card } from "react-native-paper";
 
 export default function Profile({ user }) {
   return (
-    <View style={styles.container}>
+    <ScrollView contentContainerStyle={styles.scrollContent}>
+      <View style={styles.container}>
         <View style={styles.banner}>
           <Image style={styles.image} source={require("../assets/Logo.png")} />
         </View>
