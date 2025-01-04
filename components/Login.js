@@ -14,59 +14,81 @@ export default function Login() {
                         source={require('../assets/Logo.png')}/>
                 </View>
                 <View style={styles.title}>
-                    <Text style={styles.text}>Student Login</Text>
+                    <Text variant="displayMedium" style={styles.text}>Student Login</Text>
                 </View>
-                <View style={styles.inputfield}>
+                <View style={styles.inputfields}>
                     <TextInput label="Username" mode="outlined" activeOutlineColor="#63625b"/>
                     <TextInput label="Password" mode="outlined" activeOutlineColor="#63625b"/>
-                </View>
-                <View>
-                    <Button mode="contained"
-                    onPress={() => navigation.navigate('Main')}
-                    labelStyle={styles.buttonText}
+                    <Button style={styles.button} mode="contained"
+                        onPress={() => navigation.navigate('Main')}
+                        labelStyle={styles.buttonText}
                     >
                     Login
                     </Button>
+                </View>
+                <View>
+
                 </View>  
+                <View style={styles.footer}>
+                    <Text style={styles.footerText}>UoV © 2025</Text>
+                </View>
             </View>
         </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#fff",
-  },
-  inputfield:{
-    flex:1
-  },
-  banner:{
-    flex:1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  title:{
-    flex:1
-  },
-  text: {
-    color: "black",
-    fontSize: 20,
-    marginBottom: 20,
-  },
-  buttonText: {
-    color: "black",
-  },
-  image:{
-    flex:1,
-    width:250,
-    height:65,
-    top:10,
-    position:'absolute'
-  },
-  scrollView: {
-    flexGrow: 1,
-},
+    container: {
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: "#fff",
+    },
+    banner:{
+        flex:1,
+        justifyContent: "center",
+        alignItems: "center",
+    },  
+    image:{
+        flex:1,
+        width:250,
+        height:65,
+        top:10,
+        position:'absolute',
+    },
+    title:{
+        flex:1
+    },
+    text: {
+        color: "black"
+    },
+    inputfields:{
+        flex:1,
+        width:"100%",
+        paddingLeft:10,
+        paddingRight:10
+    },
+    buttonText: {
+        color: "white",
+    },
+    button:{
+        marginTop:5,
+        backgroundColor:"#520f4e"
+    },
+    scrollView: {
+        flexGrow: 1,
+    },
+    footer:{
+        flex:1,
+        bottom:0,
+        position:"absolute",
+        backgroundColor:"#520f4e",
+        width:"100%",
+        alignItems:'center',
+        height:30
+    },
+    footerText:{
+        color:'#ffffff'
+    }
+
 });
