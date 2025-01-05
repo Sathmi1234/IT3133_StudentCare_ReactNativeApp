@@ -76,6 +76,8 @@ Ensure you have the following installed:
 
 ### Output
 
+![Output](https://github.com/user-attachments/assets/887e35e0-cbce-4713-95b7-1d0cf2678778) 
+
 
 ## Steps to Run the Project
 
