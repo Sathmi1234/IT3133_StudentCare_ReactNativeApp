@@ -18,6 +18,9 @@ export default function Subjects({user}){
             mark:mark?.marks,
         }
     })
+
+    const averageMarks = userMarks.reduce((total, item) => total + (item.mark || 0), 0) / userMarks.length;
+
     return(
         <View style={styles.container}>
             <View style={styles.banner}>
@@ -32,7 +35,7 @@ export default function Subjects({user}){
                             {userCourse.name}
                         </Text>
                         <Text variant="bodyMedium" style={{textAlign:'center'}}>
-                            {userMarks.length} Subjects| Average
+                            {userMarks.length} Subjects| Average {averageMarks.toFixed(0)}
                         </Text>
                         <View style={styles.divider} />
                         <Text variant="titleLarge" style={styles.cardtitletext}>
